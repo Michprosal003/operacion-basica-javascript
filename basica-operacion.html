@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Basicas</title>
+</head>
+<body>
+
+    <div class="operacion-form">   
+<h1 style="margin:30px; color:aliceblue;">Ejercicios de Operaciones Matematicas</h1>
+
+<label for="" style="color:aliceblue"> Numero 1 :</label>
+<input type="text" id="txtN1">
+<br><br> 
+
+
+
+<label for="" style="color:aliceblue"> Numero 2 :</label>
+<input type="text" id="txtN2">
+<br><br> 
+
+<input type="button" class="test-1" onclick="Sumar(txtN1,txtN2);" value="">
+<input type="button" class="test-2" onclick="Restar(txtN1,txtN2);" value="">
+<input type="button" class="test-3" onclick="Multiplicar(txtN1,txtN2);" value="">
+<input type="button" class="test-4" onclick="Division(txtN1,txtN2);" value="">
+
+
+
+</div>
+  
+</body>
+</html>
+
+
+
+<style>
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+background-color: dodgerblue;
+
+
+}
+
+
+.test-1{
+border-radius: 50%;
+min-width: 70px;
+min-height: 70px;
+background-image: url(https://png.pngtree.com/png-vector/20190225/ourlarge/pngtree-plus-vector-icon-png-image_702711.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+
+.test-2{
+border-radius: 50%;
+min-width: 70px;
+min-height: 70px;
+background-image: url(https://static.vecteezy.com/system/resources/previews/009/267/250/non_2x/minus-sign-icon-free-png.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.test-3{
+border-radius: 50%;
+min-width: 70px;
+min-height: 70px;
+background-image: url(https://www.shutterstock.com/image-illustration/math-symbols-blue-circle-contain-260nw-2195632315.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.test-4{
+border-radius: 50%;
+min-width: 70px;
+min-height: 70px;
+background-image: url(https://cdn-icons-png.flaticon.com/512/6399/6399505.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.operacion-form{
+position: absolute;
+top: 70px;
+left:350px;
+translate: (-50%,-50%);
+background-color: rgba(0,0,0,0.5);
+padding: 80px 40px;
+text-align: center;
+
+}
+
+
+
+</style>
+
+
+
+<script>
+/*Suma*/
+
+function Sumar(txtN1,txtN2) {
+ var n1=document.getElementById('txtN1').value; 
+ var n2=document.getElementById('txtN2').value; 
+
+var suma=parseInt(n1) + parseInt(n2);
+alert("La Suma es:"+suma)
+
+}
+
+
+/* ParseInt: Convierte un argumento de tipo cadena y devuelve un enterno de la base especificada
+*/
+
+
+
+/*Resta*/
+
+function Restar(txtN1,txtN2) {
+ var n1=document.getElementById('txtN1').value; 
+ var n2=document.getElementById('txtN2').value; 
+
+var resta=parseInt(n1) - parseInt(n2);
+alert("La Resta es:"+resta)
+
+
+}
+
+/*Multiplicacion*/
+function Multiplicar(txtN1,txtN2) {
+ var n1=document.getElementById('txtN1').value; 
+ var n2=document.getElementById('txtN2').value; 
+
+var Multiplicar=parseInt(n1) * parseInt(n2);
+alert("La Multiplicacion es:"+Multiplicar)
+
+
+}
+
+/*Division*/
+function Division(txtN1,txtN2) {
+ var n1=document.getElementById('txtN1').value; 
+ var n2=document.getElementById('txtN2').value; 
+
+var Division=parseInt(n1) / parseInt(n2);
+alert("La Division es:"+Division)
+
+
+}
+
+
+
+
+
+
+
+
+</script>
+
